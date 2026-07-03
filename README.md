@@ -1,7 +1,9 @@
 # health-okf
 
-Bitácora de salud personal en formato [Open Knowledge Format (OKF) v0.1](https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing).
+Bitácora de salud personal en formato [Open Knowledge Format (OKF) v0.1](https://raw.githubusercontent.com/GoogleCloudPlatform/knowledge-catalog/refs/heads/main/okf/SPEC.md).
 
+> [!IMPORTANT]
+> **Revisión del Estándar OKF:** Este repositorio sigue estrictamente el estándar OKF definido en el enlace superior. Cada lunes se debe revisar la URL del `SPEC.md` para verificar si existen actualizaciones al estándar y aplicar los cambios correspondientes.
 ## Estructura
 
 ```

@@ -1,12 +1,11 @@
 ---
 type: Daily Log
 title: Log YYYY-MM-DD
-description: 
-tags: [log]
+tags: [log, diario]
 timestamp: YYYY-MM-DDT00:00:00Z
 ---
 
-# Log: YYYY-MM-DD | Ciclo: Día X post-Sustanon
+# Log: YYYY-MM-DD
 
 ## Métricas Base (Despertar)
 
@@ -16,9 +15,21 @@ timestamp: YYYY-MM-DDT00:00:00Z
 | Body Battery | ___ / 100 | |
 | HRV nocturno | ___ ms | |
 | Score sueño | ___ / 100 | |
-| REM | ___% | |
 | SpO2 mínimo nocturno | ___% | |
 | RHR | ___ bpm | |
+
+## Entrenamiento y Carga
+
+### Fuerza (Tonelaje)
+| Grupo Muscular | Ejercicio | Series | Reps | Kilos Totales |
+|---|---|---|---|---|
+| | | | | |
+| **Total del Día** | | | | **___ kg** |
+
+### Cardiovascular (Efecto)
+| Actividad | Duración / Distancia | TE Aeróbico (0-5) | TE Anaeróbico (0-5) |
+|---|---|---|---|
+| | | | |
 
 ## Inputs Hidráulicos y Farmacológicos
 
@@ -26,9 +37,6 @@ timestamp: YYYY-MM-DDT00:00:00Z
 |---|---|---|
 | Agua total | ___ L | [ ] |
 | Oltan-D (07:00) | 1 comprimido | [ ] |
-| Clonazepam (21:30) | 0.5 mg | [ ] |
-| Zolpidem CR | Dosis estándar | [ ] |
-| Café | | |
 | TRT | | |
 
 ## Telemetría PA — Evolución del Día
@@ -37,23 +45,8 @@ timestamp: YYYY-MM-DDT00:00:00Z
 |---|---|---|---|---|
 | | | | | |
 
-## Estado del Sistema
+## Entrenamientos Disponibles
+- (Lista generada por el producer vía MCP)
 
-**Cuadro viral/síntomas:**
-
-**Sueño:**
-
-**Entrenamiento:**
-
-**TRT:**
-
-## Decisiones del Día
-
+## Decisiones del Día / Notas
 - 
-
-## Links
-
-- [Perfil clínico base](../index.md)
-- [Protocolo TRT](../protocols/trt.md)
-- [Medicamentos activos](../protocols/medications.md)
-- [Histórico PA](../metrics/blood-pressure.md)
