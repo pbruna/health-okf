@@ -50,13 +50,15 @@ export $(grep -v '^#' .env | xargs) && uv run $HOME/bin/garmin_health_report.py 
 - Asegúrate de rellenar las secciones de **Entrenamiento y Carga**, calculando el tonelaje (fuerza) y el Training Effect (cardio).
 - Mantén el formato `logs/YYYY/MM/YYYY-MM-DD.md`.
 - Keep Garmin metrics in native units (mmHg, bpm, ms).
+- **Registro de TRT:** Si el operador informa de una inyección de Testosterona (Sustanon u otro), DEBES registrarla en la tabla "Historial de Inyecciones Recientes" del archivo `protocols/trt.md` con su fecha, hora, dosis y PA post. También debes marcar el check correspondiente en la sección "Inputs Hidráulicos y Farmacológicos" del log diario.
 
 ### Post-Processing: Cascada de Resúmenes y Entrenamientos
 
 Después de ejecutar el script y generar el reporte diario, debes realizar obligatoriamente la **agregación en cascada**:
 
-1. **Registrar Entrenamientos Disponibles:**
+1. **Registrar Entrenamientos y Composición Corporal:**
    - Usa MCP (`get_workouts` o `get_training_plan_workouts` de Garmin) para añadir la lista de entrenamientos disponibles a la sección correspondiente del log diario.
+   - **NUEVO:** Usa MCP (`get_body_composition` o `get_weigh_ins`) para capturar los datos de la pesa Garmin Index S2 (Peso, Grasa Corporal %, Masa Muscular) y regístralos en la sección de métricas del día o semana. Esto es vital para el seguimiento de la estrategia de "Cuerpo Estilizado".
 
 2. **Cascada a Resumen Semanal (`logs/YYYY/MM/week-XX.md`):**
    - Usa la plantilla `logs/templates/weekly.md`.

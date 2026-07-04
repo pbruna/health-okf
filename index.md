@@ -16,8 +16,8 @@ timestamp: 2026-06-28T00:00:00Z
 | Presión arterial | PAS < 135 / PAD < 85 mmHg |
 | HR basal | 60–75 bpm |
 | VO2 Max | Incremento sostenido |
-| Masa muscular | Hipertrofia progresiva |
-| Grasa corporal | Reducción desde ~25% |
+| Masa muscular | Mantener musculatura visible (Cuerpo Estilizado) |
+| Grasa corporal | Reducción desde ~25% a 20% |
 
 ## Datos Antropométricos
 
@@ -33,6 +33,7 @@ timestamp: 2026-06-28T00:00:00Z
 
 - [TRT — Sustanon 250](protocols/trt.md)
 - [Medicamentos activos](protocols/medications.md)
+- [Entrenamiento: Recomposición Estilizada](protocols/training.md)
 
 ## Métricas de Referencia
 
@@ -51,3 +52,5 @@ timestamp: 2026-06-28T00:00:00Z
 | Body Battery despertar | > 50 |
 | SpO2 promedio sueño | > 96% |
 | Score sueño óptimo | ≥ 70 |
+| LTHR (Umbral Lactato)| 172 bpm |
+| Zona 2 (Quema Grasa) | 138–153 bpm |

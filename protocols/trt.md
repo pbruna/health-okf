@@ -33,6 +33,7 @@ timestamp: 2026-06-28T00:00:00Z
 |---|---|---|---|---|
 | 2026-06-19 | 12:30 | 0.33 ml | 128/80 | Bypass manual. Sesión piernas previa. |
 | 2026-06-23 | 12:30 | 0.25 ml | 132/92 | Día 10 resfriado. PAD estancada. |
+| 2026-07-01 | 13:00 | 0.25 ml | N/A | Registrado manualmente el 2026-07-04. |
 
 ## Gate de Validación para Inyección
 
