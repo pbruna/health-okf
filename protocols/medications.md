@@ -13,8 +13,8 @@ timestamp: 2026-06-28T00:00:00Z
 | Medicamento | Compuesto | Dosis | Horario | Desde |
 |---|---|---|---|---|
 | Oltan-D | Olmesartán 20mg + Hidroclorotiazida 12.5mg | 1 comprimido | Mañana (07:00) | Activo |
-| Clonazepam | Clonazepam 0.5mg | 0.5 mg | Nocturno (21:30) | Oct 2025 |
-| Zolpidem CR | Zolpidem liberación controlada | Dosis estándar | Nocturno | Oct 2025 |
+| Clonazepam | Clonazepam | Discontinuado | Nocturno | Última dosis 0.25mg el Miércoles 05/08/2026 (21:30) |
+| Zolpidem CR | Zolpidem liberación controlada | Discontinuado | Nocturno | Última dosis el Jueves 06/08/2026 |
 | Antibiótico (Resfrío) | - | 1 dosis | 3 veces al día | 29 Jun - 05 Jul 2026 |
 
 ## Oltan-D
@@ -37,18 +37,18 @@ timestamp: 2026-06-28T00:00:00Z
 **Mecanismo:** Agonista GABA-A → sedación, ansiolítico, miorrelajante.
 
 **Consideraciones operativas:**
-- Dosis estable 0.5mg desde oct 2025 — no en tapering activo
-- No aumentar dosis en episodios de PA elevada → riesgo de potenciar hipoxia obstructiva nocturna
-- Vida media larga (20–40h) → no genera rebote agudo entre dosis
+- **Desmonte (Tapering) Finalizado:** Última dosis administrada el Miércoles 05/08/2026 a las 21:30 (0.25 mg). Leves síntomas de abstinencia/rebote registrados el Viernes 07/08/2026; asintomático Sábado 08/08 y Domingo 09/08.
+- No reiniciar ni aumentar dosis en episodios de PA elevada → riesgo de potenciar hipoxia obstructiva nocturna
+- Vida media larga (20–40h) → Continuar monitoreando calidad de sueño y HRV nocturno durante los primeros 7-10 días de suspensión total.
 
 ## Zolpidem CR
 
 **Mecanismo:** Agonista GABA-A selectivo → inductor del sueño con liberación bifásica.
 
 **Consideraciones operativas:**
-- Relajación de musculatura de vía aérea superior → riesgo de apnea obstructiva con congestión nasal activa
-- Dormir siempre en decúbito lateral o posición elevada mientras haya cuadro viral
-- Puede fragmentar segunda mitad del sueño cuando el CR se metaboliza
+- **Discontinuado:** Última dosis administrada el Jueves 06/08/2026.
+- Vida media corta (~2.5–6h): Eliminado completamente del organismo en < 24–36 horas.
+- Monitorear latencia del sueño espontáneo y arquitectura del sueño sin inductores farmacológicos.
 
 ## Restricciones Farmacológicas
 

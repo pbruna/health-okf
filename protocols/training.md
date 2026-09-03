@@ -3,10 +3,12 @@ type: Protocol
 title: Entrenamiento — Recomposición Estilizada
 description: Protocolo de entrenamiento enfocado en pérdida de grasa, capacidad aeróbica y resistencia muscular.
 tags: [entrenamiento, cardio, hiit, recomposicion, fat-loss]
-timestamp: 2026-07-04T12:00:00Z
+timestamp: 2026-08-23T22:00:00Z
 ---
 
 # Protocolo: Recomposición Estilizada y Resistencia
+
+> ⚠️ **Adaptación Temporal (2026-08-23 en adelante):** El operador estará sin acceso a gimnasio por aproximadamente **2 meses**. El entrenamiento con pesas de este protocolo ha sido adaptado a calistenia de alta densidad. Ver protocolo completo en **[CALISTENIA.md](../CALISTENIA.md)** — incluye plan semanal, progresión de 8 semanas, guía visual de ejercicios y reglas de sobrecarga progresiva sin pesas. El cardio (Zona 2, Fartlek, LSD) y las reglas de gatekeeping permanecen **sin cambios**.
 
 Este protocolo reemplaza el enfoque anterior de "Hipertrofia y Tonelaje Progresivo" por uno de **Recomposición Corporal Estilizada**. El objetivo principal es la oxidación de grasas, el acondicionamiento cardiovascular (vital para el manejo de la hipertensión) y el mantenimiento de una base muscular magra y funcional.
 
@@ -98,3 +100,10 @@ Para el diseño de circuitos HIIT y rutinas de resistencia muscular, este es el 
   - **Discos por mancuerna (Pares):** 2.5 Kg, 5 Kg, 3x10 Kg.
   - *Nota: El peso máximo armable por mancuerna es de 37.5 Kg (sin contar la barra de la mancuerna).*
 - **1 Saco Búlgaro de 20 Kg** (Para movimientos balísticos y metabólicos).
+
+### Equipamiento Temporal (Sin Gimnasio — Período 2026-08-23 al ~2026-10-23)
+
+- **1 Barra de Dominadas** (único equipamiento disponible).
+- **Peso Corporal** como resistencia principal.
+- **Lastre Casero Opcional:** Mochila con botellas de agua (5–15 Kg estimado).
+- Ver [CALISTENIA.md](../CALISTENIA.md) para el protocolo completo adaptado.

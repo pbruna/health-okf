@@ -1,1 +1,3 @@
 .env
+garmin_raw_*.json
+*-temp.md

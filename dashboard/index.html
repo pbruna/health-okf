@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Health OKF Dashboard</title>
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+</head>
+<body>
+    <div class="app-container">
+        <header class="main-header">
+            <div class="header-left">
+                <div class="avatar">
+                    <i data-lucide="user"></i>
+                </div>
+                <div>
+                    <h1>Mi Salud</h1>
+                    <p id="date-display" class="subtitle">Sincronizando...</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="status-indicator" id="sync-status-container">
+                    <div id="sync-status" class="dot loading"></div>
+                </div>
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i data-lucide="moon" id="theme-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <main class="dashboard-grid">
+            
+            <!-- BP Card -->
+            <div class="card metric-card">
+                <div class="card-header">
+                    <h3>Presión Arterial</h3>
+                    <i data-lucide="activity" class="icon-bp"></i>
+                </div>
+                <div class="card-body">
+                    <div class="metric-value" id="bp-value">--/--</div>
+                    <div class="metric-label">mmHg</div>
+                </div>
+            </div>
+
+            <!-- HRV Card -->
+            <div class="card metric-card">
+                <div class="card-header">
+                    <h3>HRV Nocturno</h3>
+                    <i data-lucide="heart-pulse" class="icon-hrv"></i>
+                </div>
+                <div class="card-body">
+                    <div class="metric-value" id="hrv-value">--</div>
+                    <div class="metric-label">ms promedio</div>
+                </div>
+            </div>
+
+            <!-- Body Battery Card -->
+            <div class="card metric-card">
+                <div class="card-header">
+                    <h3>Body Battery</h3>
+                    <i data-lucide="battery-charging" class="icon-battery"></i>
+                </div>
+                <div class="card-body">
+                    <div class="metric-value" id="bb-value">--</div>
+                    <div class="metric-label">% actual</div>
+                </div>
+            </div>
+
+            <!-- Sleep Card -->
+            <div class="card metric-card">
+                <div class="card-header">
+                    <h3>Calidad de Sueño</h3>
+                    <i data-lucide="moon-star" class="icon-sleep"></i>
+                </div>
+                <div class="card-body">
+                    <div class="metric-value" id="sleep-value">--</div>
+                    <div class="metric-label">Puntaje</div>
+                </div>
+            </div>
+
+            <!-- Main Chart Section -->
+            <div class="card chart-card">
+                <div class="card-header">
+                    <h3>Tendencias (Simulación)</h3>
+                    <i data-lucide="bar-chart-3"></i>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="mainChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Alerts Section -->
+            <div class="card alerts-card">
+                <div class="card-header">
+                    <h3>Alertas del Día</h3>
+                    <i data-lucide="bell" class="icon-alert"></i>
+                </div>
+                <ul id="alerts-list" class="alerts-list">
+                    <li class="skeleton-text"></li>
+                    <li class="skeleton-text w-75"></li>
+                </ul>
+            </div>
+
+            <!-- Raw Log Section -->
+            <div class="card raw-log-card">
+                <div class="card-header">
+                    <h3>Log Completo (Markdown)</h3>
+                    <i data-lucide="file-text"></i>
+                </div>
+                <div id="raw-log-content" class="markdown-body">
+                    <div class="skeleton-text"></div>
+                    <div class="skeleton-text w-75"></div>
+                    <div class="skeleton-text w-50"></div>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/parser.js" defer></script>
+    <script src="js/app.js" defer></script>
+</body>
+</html>

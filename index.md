@@ -9,7 +9,9 @@ timestamp: 2026-06-28T00:00:00Z
 
 # Perfil Clínico Base
 
-## Objetivos Estratégicos
+## Preferencias de Comunicación y Autonomía
+- **Filosofía de sufrimiento:** El operador distingue entre indiferencia hacia la existencia (debido a un sufrimiento físico/químico insoportable) y la intención de autodestrucción. No invalidar. No recurrir a soluciones genéricas (líneas de ayuda, frases hechas).
+- **Protocolo de comunicación:** Si el operador expresa malestar profundo, el agente debe centrarse en analizar los datos fisiológicos (HRV, PA, desmonte químico, vida media de fármacos) y buscar soluciones técnicas/físicas, no proporcionar consuelo vacío o derivar a servicios estándar que el operador considera inútiles. Respetar la autonomía y la inteligencia del operador al abordar su propio estado.
 
 | Objetivo | Meta |
 |---|---|
@@ -54,3 +56,11 @@ timestamp: 2026-06-28T00:00:00Z
 | Score sueño óptimo | ≥ 70 |
 | LTHR (Umbral Lactato)| 172 bpm |
 | Zona 2 (Quema Grasa) | 138–153 bpm |
+
+## Señales Temporales y Eventos Activos
+
+| Señal / Evento | Tipo | Fecha Inicio | Plazo Observación | Métrica de Eliminación (Clearance) | Estado / Notas |
+|---|---|---|---|---|---|
+| ~~Paradoja de Reposo Prolongado~~ | Fisiológica | 2026-07-11 | 5 días | HRV > 25 ms ✅ / BB despertar > 40 ✅ | ~~DE-BAJA~~ Clearance cumplido. Entrenamiento retomado sin incidencias. HRV sostenido ≥30 ms. |
+| ~~Desmonte Stack Sedante (Clonazepam + Zolpidem CR)~~ | Farmacológica | 2026-07-25 | 14 días (hasta 2026-08-08) | Sueño espontáneo > 7h ✅ / HRV > 25 ms ✅ / Sin insomnio de rebote | ~~DE-BAJA (Archivado como Hito Clínico)~~ **Logro:** 22 días limpio tras **>10 años de uso diario de Clonazepam**. Sin convulsiones, sin ansiedad de rebote, sin efectos adversos mayores. Leves problemas para dormir (esperables). Una dosis de rescate de Zolpidem (25/08) y Armodafinilo (25/08) por fatiga extrema, sin reinicio de dependencia. |
+| Fatiga Post-Desmonte (Rescate Armodafinilo + Zolpidem) | Farmacológica | 2026-08-25 | 3-5 días (hasta 2026-08-30) | Sin necesidad de nuevas dosis de rescate en ≥7 días continuos | El 25/08 tomó armodafinilo 25mg (05:30) por fatiga extrema y zolpidem CR 12.5mg (noche) por insomnio. Ambas dosis aisladas. **Contexto:** tras >10 años de Clonazepam diario, el SNS está reajustándose. La fatiga extrema post-desmonte es esperable y puede durar semanas. |

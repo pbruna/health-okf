@@ -51,6 +51,41 @@ export $(grep -v '^#' .env | xargs) && uv run $HOME/bin/garmin_health_report.py 
 - Mantén el formato `logs/YYYY/MM/YYYY-MM-DD.md`.
 - Keep Garmin metrics in native units (mmHg, bpm, ms).
 - **Registro de TRT:** Si el operador informa de una inyección de Testosterona (Sustanon u otro), DEBES registrarla en la tabla "Historial de Inyecciones Recientes" del archivo `protocols/trt.md` con su fecha, hora, dosis y PA post. También debes marcar el check correspondiente en la sección "Inputs Hidráulicos y Farmacológicos" del log diario.
+- **Protocolo de Rescate Clonazepam (01/09 - 11/09/2026):** Durante este período, el operador está en un desmonte ultra-controlado. DEBES:
+  1. **Preguntar automáticamente** en cada interacción sobre el cumplimiento del protocolo del día
+  2. **Registrar en la sección correspondiente** del log diario las confirmaciones de:
+     - Clonazepam según horario y dosis del protocolo (11:00am)
+     - Zolpidem según horario del protocolo (22:00 noche anterior)
+     - TRT si corresponde según `protocols/trt.md`
+  3. **Crear una tabla de seguimiento** en cada log diario durante este período:
+     ```
+     ## Seguimiento Protocolo de Rescate - Día X
+     
+     | Medicamento | Dosis Programada | Hora Programada | ¿Tomado? | Hora Real | Observaciones |
+     |---|---|---|---|---|---|
+     | Clonazepam | [según protocolo actualizado] | [08:00am o SKIP] | [ ] | | |
+     | Zolpidem (noche anterior) | 12.5mg o SKIP | 22:00 | [ ] | | |
+     | Oltan-D | 1 comp | 07:00 | [ ] | | |
+     ```
+     **PROTOCOLO FINAL CONFIRMADO:**
+     - **01/09 (Mar):** Clonazepam 0.25mg (11:00am) + Zolpidem Sommit CR 12.5mg (22:00)
+     - **02/09 (Mié):** Clonazepam 0.25mg (22:00) + Zolpidem Sommit CR 12.5mg (22:00) + 🏋️ Pull Upper
+     - **03/09 (Jue):** Clonazepam 0.25mg (22:00) + Zolpidem Sommit CR 12.5mg (22:00) + 🏃 Trote Z2
+     - **04/09 (Vie):** 🏃 Trote 05:30 + TRT 0.25ml (08:30) + **Sommit CR 12.5mg (13:00 SIESTA)** 💤 + Modafinilo 25mg (18:00) + 🚗 Manejo 22:00-08:00
+        └── NO clonazepam (SKIP)
+        └── NO Zolpidem nocturno (se usó como siesta)
+     - **05/09 (Sáb):** Clonazepam 0.25mg (22:00) + Zolpidem Sommit CR 12.5mg (22:00)
+     - **06-07/09 (Dom-Lun):** Clonazepam 0.125mg (22:00) + Zolpidem Sommit CR 12.5mg (22:00) + Full Body A
+     - **08-10/09 (Mar-Jue):** Solo Zolpidem Sommit CR 12.5mg (22:00) — entreno normal
+     - **11/09+:** Evaluar Zolpidem
+     
+     **NOTA:** Zolpidem del operador es **Sommit CR 12.5mg** (liberación controlada, no común).
+     
+     **SEGUIMIENTO ESPECIAL VIERNES:**
+     - Monitoreo PA: 08:00 (pre-TRT), 12:00, 16:00 (pre-manejo) - red flags >150/95
+     - Confirmar TRT solo si gates cardiovasculares OK (PAS <135, PAD <90)
+     - Registrar hora exacta Sommit CR siesta y modafinilo
+     - El operador es atleta experimentado (VO2max 46, 8 maratones). Ejercicio es terapéutico.
 
 ### Post-Processing: Cascada de Resúmenes y Entrenamientos
 
@@ -65,7 +100,9 @@ Después de ejecutar el script y generar el reporte diario, debes realizar oblig
    - Suma el tonelaje de fuerza de todos los días de la semana y agrégalo por grupo muscular.
    - Suma el volumen cardiovascular de la semana y promedia los efectos aeróbico/anaeróbico.
    - Evalúa la tendencia de salud (PA, HRV, Body Battery).
+   - **Señales Temporales:** Consulta la sección "Señales Temporales y Eventos Activos" en `index.md` e incluye cualquier señal/evento activo durante esta semana en el resumen, para mantener la trazabilidad histórica de los eventos que afectaron las métricas.
 
 3. **Cascada a Resumen Mensual (`logs/YYYY/MM/summary.md`) y Anual:**
    - Al cierre de mes, usa la plantilla `logs/templates/monthly.md`, sumando el tonelaje y volumen de las 4 semanas para evaluar progresión del mesociclo.
+   - Consulta e incluye las "Señales Temporales y Eventos Activos" de `index.md` que hayan estado presentes en el mes.
    - A final de año, usa `logs/templates/yearly.md` alimentado por los meses para evaluar el macrociclo.
